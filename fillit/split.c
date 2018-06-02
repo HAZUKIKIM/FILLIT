@@ -6,7 +6,7 @@
 /*   By: kykim <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/30 21:00:46 by kykim             #+#    #+#             */
-/*   Updated: 2018/05/30 21:01:18 by kykim            ###   ########.fr       */
+/*   Updated: 2018/06/02 12:49:16 by kykim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,7 @@ char			**splitandsave(char **listoftet, char *tetriminos, int numoftet)
 		i++;
 		j += 21;
 	}
+	free(tetriminos);
 	return (listoftet);
 }
 
