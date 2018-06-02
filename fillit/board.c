@@ -6,7 +6,7 @@
 /*   By: kykim <kykim@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/28 16:01:18 by kykim             #+#    #+#             */
-/*   Updated: 2018/05/31 09:26:28 by kykim            ###   ########.fr       */
+/*   Updated: 2018/06/02 12:15:24 by kykim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ void	printboard(char **board)
 	while (board[i] != NULL)
 	{
 		ft_putstr(board[i]);
+		ft_putchar('\n');
 		i++;
 	}
 }
@@ -48,7 +49,6 @@ char	**initboard(char **board, int size)
 			board[i][j] = '.';
 			j++;
 		}
-		board[i][j] = '\n';
 		i++;
 	}
 	return (board);
@@ -61,11 +61,11 @@ char	**makeboard(int size)
 	int			j;
 
 	i = 0;
-	board = (char **)malloc(sizeof(char *) * size + 1);
+	board = (char **)malloc(sizeof(char *) * (size + 1));
 	board[size] = NULL;
 	while (i < size)
 	{
-		board[i] = (char *)malloc(sizeof(char) * size + 1);
+		board[i] = (char *)malloc(sizeof(char) * (size + 1));
 		board[i][size] = '\0';
 		i++;
 	}

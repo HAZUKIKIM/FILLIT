@@ -6,7 +6,7 @@
 /*   By: kykim <kykim@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/28 19:17:27 by kykim             #+#    #+#             */
-/*   Updated: 2018/05/31 10:35:50 by kykim            ###   ########.fr       */
+/*   Updated: 2018/06/02 12:15:22 by kykim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	solve(char **list, char **board, int tetorder, int numoftet)
 	int grid[2];
 	int i;
 
-	i = ft_strlen(board[0]) - 1;
+	i = ft_strlen(board[0]);
 	if (tetorder == numoftet)
 		return (1);
 	grid[0] = 0;
