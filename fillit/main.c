@@ -6,7 +6,7 @@
 /*   By: kykim <kykim@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/30 16:39:49 by kykim             #+#    #+#             */
-/*   Updated: 2018/06/02 12:50:32 by kykim            ###   ########.fr       */
+/*   Updated: 2018/06/02 13:05:00 by kykim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,9 +58,6 @@ int		main(int argc, char **argv)
 	if (argc != 2)
 		ft_putstr("usage: ./fillit input_sample_file\n");
 	else
-	{
 		backtrack(argv, list, board);
-		free(list);
-	}
 	return (0);
 }
