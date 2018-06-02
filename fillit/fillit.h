@@ -6,7 +6,7 @@
 /*   By: kykim <kykim@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/25 18:01:49 by kykim             #+#    #+#             */
-/*   Updated: 2018/05/31 09:21:51 by kykim            ###   ########.fr       */
+/*   Updated: 2018/06/01 21:09:12 by kykim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,5 +56,7 @@ int				goodtoput(char **board, char *tetrimino, int grid[2], int size);
 int				solve(char **list, char **board, int tetorder, int numoftet);
 
 void			freeboard(char **board);
+
+void			backtrack(char **av, char **list, char **board);
 
 #endif
